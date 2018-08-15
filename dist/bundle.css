@@ -1,0 +1,84 @@
+ul {
+  position: sticky;
+  top: 0;
+  margin: 0px;
+  padding: 0px;
+  width: 200px; }
+
+ul li {
+  list-style-type: none;
+  padding: 5px 20px 5px 20px;
+  border: solid 1px;
+  margin-top: 10px;
+  border-color: #a0a0a0;
+  text-transform: uppercase;
+  transition: 0.3s;
+  font-size: 0.8em;
+  color: #a0a0a0; }
+
+ul:first-child {
+  padding-top: 50px; }
+
+ul li:hover {
+  background-color: #a0a0a0;
+  color: #ffffff; }
+
+ul li:active {
+  background-color: #909090; }
+
+ul a {
+  text-decoration: none;
+  color: #000000; }
+
+body {
+  background-color: #fafafa;
+  color: #505050;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0px;
+  margin: 0px;
+  padding: 0px 50px 0px 50px;
+  font-family: Ubuntu-Regular;
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
+@font-face {
+  font-family: 'Ubuntu-Regular';
+  src: local("Ubuntu-Regular"), local("Ubuntu-Regular"), url("/../font/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+.blocks {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0px;
+  margin: 0px;
+  flex-grow: 1; }
+
+.content-block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50px; }
+
+.short-information {
+  margin-left: 25px;
+  font-size: 1.1em; }
+
+.hobby {
+  margin-left: 150px;
+  margin-right: 150px; }
+
+.hobby h1 {
+  margin-bottom: 10px;
+  padding: 0px;
+  text-transform: uppercase; }
+
+.hobby span {
+  text-align: justify; }
