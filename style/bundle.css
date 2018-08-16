@@ -1,5 +1,5 @@
 ul {
-  position: sticky;
+  position: fixed; 
   top: 0;
   margin: 0px;
   padding: 0px;
@@ -40,11 +40,12 @@ body {
   padding: 0px 50px 0px 50px;
   font-family: Ubuntu-Regular;
   overflow-x: hidden;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+}
 
 @font-face {
   font-family: 'Ubuntu-Regular';
-  src: local("Ubuntu-Regular"), local("Ubuntu-Regular"), url("/../font/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+  src: local("Ubuntu-Regular"), local("Ubuntu-Regular"), url("./font/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
@@ -59,6 +60,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  width: 100%;
   align-items: center;
   height: 100vh; }
 
@@ -72,13 +74,21 @@ body {
   font-size: 1.1em; }
 
 .hobby {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 600px;
   margin-left: 150px;
-  margin-right: 150px; }
+  margin-right: 150px;
+ }
 
 .hobby h1 {
   margin-bottom: 10px;
   padding: 0px;
+  text-align: center;
   text-transform: uppercase; }
 
-.hobby span {
-  text-align: justify; }
+.hobby p {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  text-align: justify;
+}
