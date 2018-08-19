@@ -1,17 +1,30 @@
-:host {
-  width: 250px;
-}
-
 .visible-sidebar {
   margin: 0px;
   padding: 0px;
-  width: 250px;
   display: flex;
   flex-flow: column nowrap;
-  height: 100vh;
-  position: fixed;
-  top: 0;
 }
+
+@media screen and (max-width: 1124px) {
+  :host {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 1125px) {
+  .visible-sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+  }
+
+  :host {
+    width: 250px;
+  }
+}
+
 
 nav {
   flex-grow: 1;
