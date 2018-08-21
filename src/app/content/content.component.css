@@ -1,0 +1,61 @@
+:host {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-grow: 1;
+  padding: 0px;
+  margin: 0px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.block {
+  display: flex;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 2px;
+  border: solid 1px;
+  border-color: #a0a0a0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.info .avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.dossier {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.secret {
+  background-color: #000000;
+  color: #000000;
+}
+
+.lock {
+  font-size: 0.8em;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+}
+
+p {
+  margin: 5px 0px 0px 0px;
+
+}
+
+
+
+

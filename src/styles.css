@@ -1,0 +1,21 @@
+body {
+  background-color: #fafafa;
+  font-family: Ubuntu-Regular;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+@media screen and (min-width: 1125px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
+
+@font-face {
+  font-family: 'Ubuntu-Regular';
+  src: local("Ubuntu-Regular"), local("Ubuntu-Regular"), url("assets/fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
