@@ -28,3 +28,8 @@ button:hover {
 button:active {
   background-color: #909090;
 }
+
+.mark {
+  color: crimson;
+  font-size: 0.8em;
+}
