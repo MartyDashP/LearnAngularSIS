@@ -38,11 +38,11 @@ export class PersonalData {
     let now: Date = new Date();
     let amtYears: number = now.getFullYear() - this.birthday.getFullYear();
 
-    if((now.getMonth() < this.birthday.getMonth()) ||
-      (now.getMonth() == this.birthday.getMonth() && now.getDate() < this.birthday.getDate())) {
+    if ((now.getMonth() < this.birthday.getMonth()) ||
+      (now.getMonth() === this.birthday.getMonth() && now.getDate() < this.birthday.getDate())) {
       amtYears--;
     }
-    return amtYears
+    return amtYears;
   }
 
 }

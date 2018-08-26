@@ -1,8 +1,9 @@
 <div class="visible-sidebar">
   <nav>
     <ul>
-      <a href="#inform"><li>Краткая информация</li></a>
-      <a href="#dossier"><li>Досье</li></a>
+      <li (click)="pageSelectorService.setTypePage('information')">Краткая информация</li>
+      <li (click)="pageSelectorService.setTypePage('dossier')">Досье</li>
+      <li (click)="pageSelectorService.setTypePage('skills')">Навыки</li>
     </ul>
   </nav>
 

@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}

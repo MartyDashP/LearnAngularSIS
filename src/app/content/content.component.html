@@ -1,29 +1,7 @@
-<div class="block" id="inform">
+<div class="block"  [ngSwitch]="pageSelectorService.getTypePage()" id="inform">
   <div class="info">
-    <img src="assets/imgs/avatar.jpg" alt="avatar" class="avatar">
-    <div class="information">
-      <p>ФИО: {{personalData.fullName}}</p>
-      <p>Дата рождения: {{personalData.birthday|date:'dd.MM.yyyy'}} ({{personalData.fullNumYears}} года)</p>
-      <p>Образование: {{personalData.specialty}}</p>
-      <p>Специальность: {{personalData.education}}</p>
-      <p>Контактный телефон: {{personalData.phoneNumber}}</p>
-    </div>
-  </div>
-</div>
-
-<div class="block" id="dossier">
-  <div class="info">
-    <h1>Досье</h1>
-    <div class="dossier">
-      <p>Родился <span class="secret">{{personalData.birthday|date:'dd.MM.yyyy'}}</span> года в <span class="secret">г.Краснояске</span>.</p>
-      <p class="lock">....[информация засекречена]....</p>
-      <p>В 2012 году, прыгнул с Октябрьского моста на резиновом канате.</p>
-      <p class="lock">....[информация засекречена]....</p>
-      <p>C 2015 по 2016 проходил службу в <span class="secret">66 краснознаменной ракетной дивизии</span>. </p>
-      <p class="lock">....[информация засекречена]....</p>
-      <p>В 2018 году  получил высшее образование в <span class="secret">СибГУ</span> по специальности "<span class="secret">Информатика и вычислительная техника</span>" </p>
-      <p>На данный момент занимается изучением Angular на курсах.</p>
-      <p>До конца курса осталось - {{remainingTime}}</p>
-    </div>
+    <app-information *ngSwitchCase="'information'"></app-information>
+    <app-dossier *ngSwitchCase="'dossier'"></app-dossier>
+    <app-skills *ngSwitchCase="'skills'"></app-skills>
   </div>
 </div>
