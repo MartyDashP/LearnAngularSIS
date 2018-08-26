@@ -7,6 +7,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { InformationComponent } from './content/information/information.component';
 import { DossierComponent } from './content/dossier/dossier.component';
 import { SkillsComponent } from './content/skills/skills.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SkillsComponent } from './content/skills/skills.component';
     SkillsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

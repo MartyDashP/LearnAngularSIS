@@ -25,7 +25,7 @@ export class InformationComponent implements OnInit {
       this.jsonData.education.institution,
       this.jsonData.education.type,
       this.jsonData.education.rank
-    )
+    );
     this.birthday = new Date(parseInt(this.jsonData.birthday, 10));
 
     this.makeAListData();
@@ -33,7 +33,7 @@ export class InformationComponent implements OnInit {
 
   private makeAListData = (): void => {
     this.itemsOfData.push(new ItemOfPersonalData('ФИО', this.jsonData.fullName));
-    this.itemsOfData.push(new ItemOfPersonalData('Дата рождения', this.getStandartDate(this.birthday));
+    this.itemsOfData.push(new ItemOfPersonalData('Дата рождения', this.getStandartDate(this.birthday)));
     this.itemsOfData.push(new ItemOfPersonalData('Образование', this.education.getTypeEducation()));
     this.itemsOfData.push(new ItemOfPersonalData('Специальность', this.education.getSpecialty()));
     this.itemsOfData.push(new ItemOfPersonalData('Контактный телефон', this.jsonData.phoneNumber));

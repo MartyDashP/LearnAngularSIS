@@ -1,0 +1,30 @@
+input {
+  border: none;
+  border-bottom: solid 1px;
+  border-color: #a0a0a0;
+  margin: 5px;
+  padding: 5px 10px 5px 10px;
+  outline: none;
+}
+
+button {
+  background-color: #ffffff;
+  outline: none;
+  border: solid 1px;
+  border-color: #a0a0a0;
+  border-radius: 2px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  font-size: 0.8em;
+  padding: 5px 10px 5px 10px;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #a0a0a0;
+  color: #ffffff;
+}
+
+button:active {
+  background-color: #909090;
+}

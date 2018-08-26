@@ -15,7 +15,11 @@ export class PersonalDataService {
       rank: 'Бакалавр'
     },
     phoneNumber: '+7-923-333-27-45',
-    avatar: 'assets/imgs/avatar.jpg'
+    avatar: 'assets/imgs/avatar.jpg',
+    skills: [
+      'Управление временем',
+      'Решать проблемы'
+    ]
   };
 
   constructor() { }
@@ -24,7 +28,7 @@ export class PersonalDataService {
     return this.dataJSON;
   }
 
-  public getIt = (param: string): string => {
+  public getIt = (param: string): any => {
     return this.dataJSON[param];
   }
 }

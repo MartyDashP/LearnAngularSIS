@@ -7,7 +7,7 @@ export class PageSelectorService {
   private page: string;
 
   constructor() {
-    this.page = 'information';
+    this.page = 'skills';
   }
 
   getTypePage = (): string => {
