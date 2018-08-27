@@ -11,3 +11,4 @@
 
 <input type="text" [(ngModel)]="newSkill">
 <button (click)="addSkill()">Добавить навык</button>
+<p class="error" *ngIf="flagError">Данный навык уже есть в списке!</p>

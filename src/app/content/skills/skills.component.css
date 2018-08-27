@@ -33,3 +33,9 @@ button:active {
   color: crimson;
   font-size: 0.8em;
 }
+
+.error {
+  text-align: center;
+  color: red;
+  text-transform: uppercase;
+}
