@@ -4,7 +4,6 @@
   flex-grow: 1;
   padding: 0px;
   margin: 0px;
-
   justify-content: center;
   align-items: center;
 }
@@ -24,25 +23,7 @@
   border-radius: 2px;
   border: solid 1px;
   border-color: #a0a0a0;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
 
-.info .avatar {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-}
-
-.dossier {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.secret {
-  background-color: #000000;
-  color: #000000;
 }
 
 .lock {

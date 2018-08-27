@@ -1,0 +1,14 @@
+<h1>Навыки</h1>
+<ol>
+  <li *ngFor="let skill of skills">
+    {{skill}}
+  </li>
+  <li *ngFor="let localSkill of localSkills">
+    {{localSkill}}
+    <span class="mark">(saved locally)</span>
+  </li>
+</ol>
+
+<input type="text" [(ngModel)]="newSkill">
+<button (click)="addSkill()">Добавить навык</button>
+<p class="error" *ngIf="flagError">Данный навык уже есть в списке!</p>

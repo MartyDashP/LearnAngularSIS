@@ -6,13 +6,6 @@ body {
 
 }
 
-@media screen and (min-width: 1125px) {
-  body {
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-}
-
 @font-face {
   font-family: 'Ubuntu-Regular';
   src: local("Ubuntu-Regular"), local("Ubuntu-Regular"), url("assets/fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
