@@ -1,6 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ItemOfPersonalData} from './item-of-personal-data';
-import {Education} from './personal-data';
+import {Education} from './education';
 import {PersonalDataService} from '../personal-data.service';
 
 @Component({
